@@ -1,0 +1,35 @@
+@import '../../../styles/variables.scss';
+
+.page-wrapper {
+        .carousel-container {
+            margin: auto;
+            width: 100%;
+            max-width: 1700px;
+        }
+
+        ::ng-deep .p-carousel-container {
+
+
+            button {
+                border-radius: unset;
+                border: unset;
+                background-color: #{$genre-card-background-color-hover};
+                border-radius: 2px;
+                color: white;
+                font-weight: 400;
+                transition: background-color 0.2s ease-in-out;
+                outline: none;
+
+                &:hover {
+                    color: #495057;
+                    border-color: transparent;
+                    background: #e9ecef;
+                }
+    
+                &:focus {
+                    box-shadow: 0 0 0 0.2rem #495057;
+                    border-color: #{$genre-card-background-color-hover};
+                }
+            }
+        }
+}
